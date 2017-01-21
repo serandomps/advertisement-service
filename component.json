@@ -1,0 +1,13 @@
+{
+    "name": "advertisement-service",
+    "description": "advertisement-service component",
+    "local": [],
+    "scripts": ["index.js"],
+    "main": "index.js",
+    "dependencies": {
+        "serandomps/async": "master",
+        "serandomps/utils": "master",
+        "serandomps/serand": "master",
+        "serandomps/autos-utils": "master"
+    }
+}
