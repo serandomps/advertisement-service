@@ -1,6 +1,6 @@
 {
-    "name": "advertisement-service",
-    "description": "advertisement-service component",
+    "name": "advertisements-service",
+    "description": "advertisements-service component",
     "local": [],
     "scripts": ["index.js"],
     "main": "index.js",
