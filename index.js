@@ -62,8 +62,8 @@ exports.findOne = function (options, done) {
         success: function (data) {
             update(data, options, done);
         },
-        error: function () {
-            done(new Error('error retrieving vehicle ' + options.id));
+        error: function (xhr, status, err) {
+            done(err || status || xhr);
         }
     });
 };
@@ -76,8 +76,8 @@ exports.find = function (options, done) {
         success: function (data) {
             update(data, options, done);
         },
-        error: function () {
-            done(new Error('error retrieving advertisements'));
+        error: function (xhr, status, err) {
+            done(err || status || xhr);
         }
     });
 };
