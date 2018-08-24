@@ -57,7 +57,7 @@ var update = function (advertisements, options, done) {
 exports.findOne = function (options, done) {
     $.ajax({
         method: 'GET',
-        url: utils.resolve('advertising://apis/v/advertisements/' + options.id),
+        url: utils.resolve('advertising:///apis/v/advertisements/' + options.id),
         dataType: 'json',
         success: function (data) {
             update(data, options, done);
@@ -71,7 +71,7 @@ exports.findOne = function (options, done) {
 exports.find = function (options, done) {
     $.ajax({
         method: 'GET',
-        url: utils.resolve('advertising://apis/v/advertisements' + query(options.query)),
+        url: utils.resolve('advertising:///apis/v/advertisements' + query(options.query)),
         dataType: 'json',
         success: function (data) {
             update(data, options, done);
